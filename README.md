@@ -8,7 +8,7 @@ This repository provides metadata to papers from [DBLP](dblp.org) (> 5.9m articl
 
 > As of version 2.1 of the dataset and version 1.3.0 of the crawler, the dataset adds the [Computer Science Ontology](https://github.com/jpwahle/lrec22-d3-dataset/issues/1) with information about sub-fields.
 
-> As of version 2.0 of the dataset and version 1.0.2 of the crawler, the dataset uses mainly [SemanticScholar](https://semanticscholar.org) data. We will release a blog post soon about this update and how it affects porting from version 1.0.
+> As of version 2.0 of the dataset and version 1.0.2 of the crawler, the dataset uses [SemanticScholar](https://semanticscholar.org) data. We will release a blog post soon about this update and how it affects porting from version 1.0.
 
 The goal is to keep this corpus monthly updated and provide a comprehensive repository of the full DBLP collection.
 
