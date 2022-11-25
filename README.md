@@ -6,7 +6,7 @@
 
 This repository provides metadata to papers from [DBLP](dblp.org) (> 5.9m articles, > 3.8m authors as of September 2022) crawled with the [cs-insights-crawler](https://github.com/gipplab/cs-insights-crawler).
 
-> As of version 2.1 of the dataset and version 1.3.0 of the crawler, the dataset adds the [Computer Science Ontology](https://github.com/jpwahle/lrec22-d3-dataset/issues/1) with information about sub-fields.
+> As of version 2.1 of the dataset and version 1.3.0 of the crawler, the dataset adds the [Computer Science Ontology](https://github.com/jpwahle/lrec22-d3-dataset/issues/1) with information about sub-fields. Also as of version 2.1 of the dataset, we support 🤗 [Hugging Face Datasets](https://huggingface.co/datasets/jpwahle/dblp-discovery-dataset/).
 
 > As of version 2.0 of the dataset and version 1.0.2 of the crawler, the dataset uses [SemanticScholar](https://semanticscholar.org) data. We will release a blog post soon about this update and how it affects porting from version 1.0.
 
@@ -14,13 +14,11 @@ The goal is to keep this corpus monthly updated and provide a comprehensive repo
 
 This repository provides the following exports: 
 1. 📖 All paper entries with metadata as jsonl: **size 2.7G** (gz) [download here](https://zenodo.org/record/6477785).
-2. 📖 All paper entries with metadata as csv: **size 2.5G** (gz) [download here](https://zenodo.org/record/6477785).
-3. 🙋 All author entries with metadata as jsonl: **size 188M** (gz) [download here](https://zenodo.org/record/6477785).
-4. 🙋 All author entries with metadata as csv: **size 168M** (gz) [download here](https://zenodo.org/record/6477785).
+2. 🙋 All author entries with metadata as jsonl: **size 188M** (gz) [download here](https://zenodo.org/record/6477785).
 
 ```python
->>> import pandas as pd
->>> pd.read_csv('papers.csv', delimiter="\t")
+>>> from datasets import load_dataset
+>>> load_dataset("jpwahle/dblp-discovery-dataset, "papers")['train']
 
                                                 title                                            authors                  externalids.DBLP                                           abstract
 0   The U-City Paradigm: Opportunities and Risks f...    [{'authorId': '2194162', 'name': 'F. Rotondo'}]             journals/fi/Rotondo12  Volunteered Geographic Information (VGI) tools...
