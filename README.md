@@ -18,20 +18,35 @@ This repository provides the following exports:
 
 ```python
 >>> from datasets import load_dataset
->>> load_dataset("jpwahle/dblp-discovery-dataset, "papers")['train']
-
-                                                title                                            authors                  externalids.DBLP                                           abstract
-0   The U-City Paradigm: Opportunities and Risks f...    [{'authorId': '2194162', 'name': 'F. Rotondo'}]             journals/fi/Rotondo12  Volunteered Geographic Information (VGI) tools...
-1   FPGA-based design and implementation of an app...  [{'authorId': '12653318', 'name': 'Server Kasa...                 conf/fpt/KasapR12  In this paper, we introduce a field-programmab...
-2   Influence of PEEK Coating on Hip Implant Stres...  [{'authorId': '1409483450', 'name': 'Jesica An...  journals/cmmm/Anguiano-Sanchez16  Stress shielding is a well-known failure facto...
-3   RF signal generator using time domain harmonic...  [{'authorId': '2053358173', 'name': 'Kazuo Nak...      journals/ieiceee/NakanoAIM12  This paper proposes an RF signal generator usi...
-4   On the number of cycles of length k in a maxim...  [{'authorId': '144779600', 'name': 'S. Hakimi'...            journals/jgt/HakimiS79  Let G be a maximal planar graph with p vertice...
-..                                                ...                                                ...                               ...                                                ...
-95  User-Relative Names for Globally Connected Per...  [{'authorId': '144067653', 'name': 'B. Ford'},...      journals/corr/abs-cs-0603076  Personal devices such as mobile phones, digita...
-96  Using sentence connectors for evaluating MT ou...  [{'authorId': '2397323', 'name': 'E. M. Visser...      journals/corr/cmp-lg-9608019  This paper elaborates on the design of a machi...
-97  Analysis of Fixed Outage Transmission Schemes:...  [{'authorId': '2111193263', 'name': 'Peng Wu'}...       journals/corr/abs-0710-1595  This paper studies the performance of transmis...
-98  Real Time Models of the Asynchronous Circuits:...       [{'authorId': '2058949', 'name': 'S. Vlad'}]      journals/corr/abs-cs-0412090  The chapter from the book introduces the delay...
-99                                Approximate Sorting  [{'authorId': '1695806', 'name': 'J. Giesen'},...          journals/fuin/GiesenSS09  We show that any comparison based, randomized ...
+>>> load_dataset("jpwahle/dblp-discovery-dataset, "papers")['train'][0]
+{
+ 'corpusid': 26,
+ 'externalids': ['ACL',
+  'DBLP',
+  'ArXiv',
+  'MAG',
+  'CorpusId',
+  'PubMed',
+  'DOI',
+  'PubMedCentral'],
+ 'title': 'FPGA-based design and implementation of an approximate polynomial matrix EVD algorithm',
+ 'authors': {'authorId': [12653318, 144237481],
+  'name': ['Server Kasap', 'Soydan Redif']},
+ 'venue': '2012 International Conference on Field-Programmable Technology',
+ 'year': 2012,
+ 'publicationdate': '2012-12-01',
+ 'abstract': 'In this paper, we introduce a field-programmable gate array (FPGA) hardware architecture for the realization of an algorithm for computing the eigenvalue decomposition (EVD) of para-Hermitian polynomial matrices. Specifically, we develop a parallelized version of the second-order sequential best rotation (SBR2) algorithm for polynomial matrix EVD (PEVD). The proposed algorithm is an extension of the parallel Jacobi method to para-Hermitian polynomial matrices, as such it is the first architecture devoted to PEVD. Hardware implementation of the algorithm is achieved via a highly pipelined, non-systolic FPGA architecture. The proposed architecture is scalable in terms of the size of the input para-Hermitian matrix. We demonstrate the decomposition accuracy of the architecture through FPGA-in-the-loop hardware co-simulations. Results confirm that the proposed solution gives low execution times while reducing the number of resources required from the FPGA.',
+ 'referencecount': 16,
+ 'citationcount': 1,
+ 'isopenaccess': False,
+ 'influentialcitationcount': 0,
+ 's2fieldsofstudy': {'category': ['Computer Science', 'Computer Science'],
+  'source': ['s2-fos-model', 'external']},
+ 'publicationtypes': ['JournalArticle', 'Conference'],
+ 'journal': "{'name': '2012 International Conference on Field-Programmable Technology', 'volume': None, 'pages': '135-140'}",
+ 'updated': '2022-02-13T16:00:07.412Z',
+ 'url': 'https://www.semanticscholar.org/paper/7011b84b03f1d992962c4a6c87459f7742bc3165'
+}
 ```
 
 
