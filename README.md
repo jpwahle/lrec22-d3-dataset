@@ -66,7 +66,7 @@ The exports contain the following features:
 | `publicationtypes` | The publication types of the paper. |
 | `journal` | The journal of the paper. |
 | `updated` | The last time the paper was updated. |
-| `s2url` | A url to the paper in SemanticScholar. |
+| `url` | A url to the paper in SemanticScholar. |
 
 ### Authors
 
