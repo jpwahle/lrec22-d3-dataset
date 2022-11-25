@@ -58,8 +58,8 @@ The exports contain the following features:
 | `year` | The year of the paper publication. |
 | `publicationdate` | A more precise publication date of the paper. |
 | `abstract` | The abstract of the paper. |
-| `outgoingcitations` | The number of references of the paper. |
-| `ingoingcitations` | The number of citations of the paper. |
+| `referencecount` | The number of references of the paper. |
+| `citationcount` | The number of citations of the paper. |
 | `isopenaccess` | Whether the paper is open access. |
 | `influentialcitationcount` | The number of influential citations of the paper according to SemanticScholar. |
 | `s2fieldsofstudy` | The fields of study of the paper according to SemanticScholar. |
