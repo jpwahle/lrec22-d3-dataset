@@ -3,6 +3,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2204.13384-b31b1b.svg)](https://arxiv.org/abs/2204.13384)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7069915.svg)](https://doi.org/10.5281/zenodo.7069915)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![HuggingFace Dataset](https://img.shields.io/badge/🤗-Datasets-ffce1c.svg)](https://huggingface.co/datasets/jpwahle/dblp-discovery-dataset)
 
 This repository provides metadata to papers from [DBLP](dblp.org) (> 5.9m articles, > 3.8m authors as of September 2022) crawled with the [cs-insights-crawler](https://github.com/gipplab/cs-insights-crawler).
 
